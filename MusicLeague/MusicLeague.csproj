@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MusicLeague.Model\MusicLeague.Model.csproj" />
     <ProjectReference Include="..\MusicLeague.Repository\MusicLeague.Repository.csproj" />
   </ItemGroup>
 
