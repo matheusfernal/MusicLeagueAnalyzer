@@ -13,7 +13,7 @@ namespace MusicLeague
             // Total votes by competitor
             foreach(var competitor in repository.Competitors)
             {
-                Console.WriteLine($"{competitor.Name} votes from:");
+                Console.WriteLine($"{competitor.Name}'s votes from:");
                 foreach(var voter in repository.Competitors)
                 {
                     var competitorSubmissions = repository.Submissions.Where(s => s.SubmitterId == competitor.Id).Select(s => s.SpotifyUri);
