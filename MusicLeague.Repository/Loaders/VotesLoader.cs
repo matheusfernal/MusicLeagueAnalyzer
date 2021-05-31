@@ -15,15 +15,9 @@ namespace MusicLeague.Repository.Loaders
             using var file = new StreamReader(path);
 
             string line;
-            var header = true;
+            file.ReadLine(); // header
             while ((line = file.ReadLine()) != null)
             {
-                if (header)
-                {
-                    header = false;
-                    continue;
-                }
-
                 var columns = line.Split(',');
                 var vote = new Vote
                 {
